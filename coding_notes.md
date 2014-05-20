@@ -23,3 +23,5 @@
   3. Preprocessor engines - specified by filename extensions (ie: scss for Sass, .coffee for CoffeeScript(see [RailsCast on CoffeeScript basics ](http://railscasts.com/episodes/267-coffeescript-basics) for a good place to start), and .erb for embedded Ruby (ERb))
 
 5. Rails routes - [A good read on rails routes](http://guides.rubyonrails.org/routing.html)
+
+6. Generate integration test: `rails g integration_test user_pages` will create user_pages_spec.rb
