@@ -9,7 +9,6 @@
   5. Create `custom.css.scss` under `app/assets/stylesheets/`
   6. Add `@import "bootstrap";` to `custom.css.scss`
 
-
 4. Three principal features of the asset pipeline:
 
   1. Asset directories
@@ -25,3 +24,5 @@
 5. Rails routes - [A good read on rails routes](http://guides.rubyonrails.org/routing.html)
 
 6. Generate integration test: `rails g integration_test user_pages` will create user_pages_spec.rb
+
+7. Generate user's controller `rails generate controller Users new --no-test-framework`. In this case `new` is the action automatically generated in the `Users` controller because we specified it. This also creates a `users/new.html.erb` under 'app/views'
