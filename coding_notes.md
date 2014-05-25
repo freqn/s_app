@@ -26,3 +26,9 @@
 6. Generate integration test: `rails g integration_test user_pages` will create user_pages_spec.rb
 
 7. Generate user's controller `rails generate controller Users new --no-test-framework`. In this case `new` is the action automatically generated in the `Users` controller because we specified it. This also creates a `users/new.html.erb` under 'app/views'
+
+8. The default library for interacting with the Rails database is called 'Active Record'
+
+9. Rails console sandbox mode: `rails console --sandbox`
+
+10. Generating a model also generates a spec unless you pass in the flag `--no-test-framework` when generating
