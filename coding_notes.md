@@ -32,3 +32,16 @@
 9. Rails console sandbox mode: `rails console --sandbox`
 
 10. Generating a model also generates a spec unless you pass in the flag `--no-test-framework` when generating
+
+11. Constant and regex for validating email format: `VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i`. Learn more about regex at [Rubular](http://www.rubular.com/)
+
+12. Create database index on the email column: `$ rails generate migration add_index_to_users_email` and add the following to the new migration file:
+```ruby
+class AddIndexToUsersEmail < ActiveRecord::Migration
+  def change
+    add_index :users, :email, unique: true
+  end
+end
+```
+
+13. Generate migration for password digest column: `$ rails generate migration add_password_digest_to_users password_digest:string`
