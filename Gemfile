@@ -23,7 +23,6 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'growl', '1.0.3'
   gem 'nyan-cat-formatter'
-
 end
 
 gem 'sass-rails', '4.0.1'
